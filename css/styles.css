@@ -1,0 +1,225 @@
+@font-face {
+  font-family: 'Barlow';
+  src: url("../fonts/Barlow-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+/*
+:root {
+  --width: 180px;
+}
+*/
+/* line 20, styles.scss */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* line 24, styles.scss */
+HTML,
+BODY {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  font-family: 'Barlow';
+}
+
+/* line 34, styles.scss */
+BODY {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+/* line 40, styles.scss */
+DIV#div_main {
+  display: table;
+  table-layout: fixed;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 970px;
+  height: 500px;
+  background-color: #EFF6FF;
+  color: #2A4A5C;
+}
+
+/* line 51, styles.scss */
+DIV#div_left {
+  display: table-cell;
+  background: url(../img/bg.jpg) left top no-repeat;
+  background-size: 100% 100%;
+  width: 530px;
+  position: relative;
+}
+/* line 58, styles.scss */
+DIV#div_left #logo {
+  width: 90px;
+  position: absolute;
+  top: 35px;
+  left: 35px;
+}
+
+/* line 66, styles.scss */
+DIV#div_right {
+  display: table-cell;
+  font-stretch: expanded;
+  padding: 70px 50px;
+  width: 485px;
+}
+/* line 72, styles.scss */
+DIV#div_right #div_get {
+  font-size: 2.0em;
+}
+/* line 75, styles.scss */
+DIV#div_right #div_there {
+  font-size: 1.2em;
+  margin: 15px 0 0 0;
+  color: #7B8A92;
+}
+/* line 81, styles.scss */
+DIV#div_right #div_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 40px;
+}
+/* line 88, styles.scss */
+DIV#div_right BUTTON {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  font-size: 0.9em;
+  height: 30px;
+  color: #fff;
+  padding-left: 35px;
+  width: 180px;
+}
+/* line 99, styles.scss */
+DIV#div_right BUTTON#btn_facebook {
+  background: url(../img/facebook.svg) #255A9B 8px 8px no-repeat;
+  background-size: 15px auto;
+  margin-right: 25px;
+}
+/* line 104, styles.scss */
+DIV#div_right BUTTON#btn_linkedin {
+  background: url(../img/linkedin.svg) #0076B6 8px 8px no-repeat;
+  background-size: 15px auto;
+}
+/* line 109, styles.scss */
+DIV#div_right BUTTON#btn_create {
+  background-color: #3698FB;
+  border-radius: 3px;
+  margin: 40px 0 0px 0;
+}
+/* line 116, styles.scss */
+DIV#div_right #div_hr {
+  text-align: center;
+}
+/* line 119, styles.scss */
+DIV#div_right #div_hr hr {
+  border: 0;
+  width: 50%;
+  border-top: 1px solid #c5c5c5;
+  margin: 45px auto 30px auto;
+  overflow: visible;
+}
+/* line 126, styles.scss */
+DIV#div_right #div_hr hr::before {
+  content: 'OR';
+  position: relative;
+  top: -10px;
+  color: #525252;
+  background-color: white;
+  padding: 2px 5px;
+  font-size: 0.7em;
+}
+/* line 140, styles.scss */
+DIV#div_right #div_inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 40px;
+}
+/* line 147, styles.scss */
+DIV#div_right .div_input {
+  position: relative;
+}
+/* line 150, styles.scss */
+DIV#div_right .div_input INPUT {
+  width: 180px;
+  border: 1px solid #c5c5c5;
+  padding: 18px 8px 5px 8px;
+  height: 50px;
+  outline: none;
+}
+/* line 158, styles.scss */
+DIV#div_right .div_input INPUT:focus {
+  border-left: 2px solid #3597FC;
+}
+/* line 163, styles.scss */
+DIV#div_right .div_input .inp_label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+  pointer-events: none;
+  color: #8B99A4;
+  margin: 3px 0 5px 8px;
+}
+/* line 175, styles.scss */
+DIV#div_right #spn_what {
+  font-size: 1.6em;
+}
+/* line 179, styles.scss */
+DIV#div_right #div_select {
+  font-size: 1.0em;
+  color: #8B99A4;
+  margin-top: 8px;
+}
+/* line 185, styles.scss */
+DIV#div_right #div_radio {
+  padding: 30px 0;
+}
+/* line 188, styles.scss */
+DIV#div_right #div_radio SPAN {
+  margin-right: 30px;
+  color: #4F4F4F;
+  white-space: nowrap;
+}
+/* line 195, styles.scss */
+DIV#div_right #spn_iam {
+  color: #A1A1A1;
+  font-size: 1.0em;
+}
+/* line 200, styles.scss */
+DIV#div_right #div_iagree {
+  color: #A1A1A1;
+  padding-top: 40px;
+}
+
+/*# sourceMappingURL=styles.css.map */
